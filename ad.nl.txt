@@ -1,7 +1,9 @@
 #bypass cookie check
-single_page_link: //a[contains(@href, '/accept?url=')]
+http_header(cookie): pws=functional|analytics; pwv=2
 
-test_url: http://www.ad.nl/ad/nl/10444/Offside/article/detail/4043834/2015/05/31/Dani-Alves-voetbalt-met-drol-op-zijn-hoofd.dhtml
+strip: //div[contains(concat(' ', normalize-space(@class), ' '), ' article__component--related ')]
+strip: //div[contains(concat(' ', normalize-space(@class), ' '), ' slideshow-trigger__wrapper ')]
+strip_attr: //*/@class
+
+test_url: https://www.ad.nl/offside/dani-alves-voetbalt-met-drol-op-zijn-hoofd~a18386d6/
 test_contains: De nieuwe coupe van Alves
-
-test_url: http://www.ad.nl/digitaal/rss.xml
