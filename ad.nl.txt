@@ -1,5 +1,5 @@
 #bypass cookie check
-http_header(cookie): pws=functional|analytics; pwv=2
+http_header(cookie): pws=functional|analytics|content_recommendation|targeted_advertising|social_media; pwv=2
 
 body: //article[@class='article']
 
