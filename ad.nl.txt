@@ -1,6 +1,10 @@
 #bypass cookie check
 http_header(cookie): pws=functional|analytics; pwv=2
 
+body: //article[@class='article']
+
+strip: //div[contains(concat(' ', normalize-space(@class), ' '), ' sharing ')]
+strip: //div[contains(concat(' ', normalize-space(@class), ' '), ' modal--mail-a-friend ')]
 strip: //div[contains(concat(' ', normalize-space(@class), ' '), ' article__component--related ')]
 strip: //div[contains(concat(' ', normalize-space(@class), ' '), ' slideshow-trigger__wrapper ')]
 strip_attr: //*/@class
