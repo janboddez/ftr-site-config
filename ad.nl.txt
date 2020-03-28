@@ -7,7 +7,6 @@ strip: //div[contains(concat(' ', normalize-space(@class), ' '), ' sharing ')]
 strip: //div[contains(concat(' ', normalize-space(@class), ' '), ' modal--mail-a-friend ')]
 strip: //div[contains(concat(' ', normalize-space(@class), ' '), ' article__component--related ')]
 strip: //div[contains(concat(' ', normalize-space(@class), ' '), ' slideshow-trigger__wrapper ')]
-strip_attr: //*/@class
 
 test_url: https://www.ad.nl/offside/dani-alves-voetbalt-met-drol-op-zijn-hoofd~a18386d6/
 test_contains: De nieuwe coupe van Alves
