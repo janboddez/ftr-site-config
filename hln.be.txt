@@ -5,10 +5,10 @@ strip: //span[@class='article__label']
 
 body: //div[contains(concat(' ', normalize-space(@class), ' '), ' article__text--intro ')] | //div[contains(concat(' ', normalize-space(@class), ' '), ' article__media ')] | //p[@class='article__text']
 
-strip: //div[@class='article__snippet--freehtml']
-strip: //div[@class='related-content']
-strip: //div[@class='article__social']
-strip: //hr
+#strip: //div[@class='article__snippet--freehtml']
+#strip: //div[@class='related-content']
+#strip: //div[@class='article__social']
+#strip: //hr
 
 test_url: https://www.hln.be/sport/voetbal/tijdelijke-werkloosheid-en-loon-van-1-411-euro-of-70-procent-inleveren-lionel-messi-en-co-liggen-dwars~a09ce7e2/
 test_contains: Nu de Spaanse voetbalclubs inkomsten mislopen
