@@ -1,0 +1,5 @@
+#bypass cookie check
+http_header(cookie): pws=functional|analytics|content_recommendation|targeted_advertising|social_media; pwv=2
+
+body: //div[contains(concat(' ', normalize-space(@class), ' '), ' article__wrapper ')] | //div[contains(concat(' ', normalize-space(@id), ' '), ' remaining-paid-content ')]
+strip: //div[contains(concat(' ', normalize-space(@class), ' '), ' article__meta ')]

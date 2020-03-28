@@ -1,0 +1,10 @@
+#bypass cookie check
+http_header(cookie): pws=functional|analytics|content_recommendation|targeted_advertising|social_media; pwv=1
+
+body: //div[@class='article__text--intro']
+body: //article[@class='article']
+
+strip: //div[@class='article__snippet--freehtml']
+strip: //div[@class='related-content']
+strip: //div[@class='article__social']
+strip: //hr

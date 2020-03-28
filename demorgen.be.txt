@@ -1,0 +1,7 @@
+#bypass cookie check
+http_header(cookie): pws=functional|analytics|content_recommendation|targeted_advertising|social_media; pwv=1
+
+body: //section[contains(concat(' ', normalize-space(@class), ' '), ' artstyle__main ')]
+
+strip: //aside[@data-element-id='article-element-editorialtips']
+strip: //section[@data-element-id='article-element-authors']
