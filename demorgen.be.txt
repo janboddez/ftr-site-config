@@ -1,10 +1,11 @@
 #bypass cookie check
 http_header(cookie): pws=functional|analytics|content_recommendation|targeted_advertising|social_media; pwv=1
 
-body: //header[@class='artstyle__header'] | //section[contains(concat(' ', normalize-space(@class), ' '), ' artstyle__main ')]
+body: //p[@class='artstyle__intro'] | //section[contains(concat(' ', normalize-space(@class), ' '), ' artstyle__main ')]
 
-strip: //h4[@class='artstyle__labels']
+strip: //aside[@class='artstyle__dossier']
 strip: //aside[@data-element-id='article-element-editorialtips']
+strip: //h4[@class='artstyle__labels']
 strip: //section[@data-element-id='article-element-authors']
 
 test_url: https://www.demorgen.be/politiek/geen-verschil-in-het-belgische-en-nederlandse-coronabeleid-toch-wel~bc7b6625/
